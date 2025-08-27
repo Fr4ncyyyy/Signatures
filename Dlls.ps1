@@ -31,7 +31,7 @@ Start-Sleep -s 3
 
 Clear-Host
 
-$host.privatedata.ProgressForegroundColor = "red";
+$host.privatedata.ProgressForegroundColor = "green";
 $host.privatedata.ProgressBackgroundColor = "black";
 
 $pathsFilePath = "paths.txt"
@@ -77,3 +77,4 @@ Write-Host "Lo scan ha impiegato $time per essere eseguito." -ForegroundColor Ye
 
 
 $results | Out-GridView -PassThru -Title 'Signatures Results'
+
