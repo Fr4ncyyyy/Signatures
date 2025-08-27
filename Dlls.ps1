@@ -16,7 +16,7 @@ Write-Host @"
   ╚═════╝ ╚══════╝╚══════╝╚══════╝
 "@ -ForegroundColor Green
 Write-Host ""
-Write-Host "  Made by Francesco kjj - " -ForegroundColor 1 100 0 -NoNewline
+Write-Host "  Made by Francesco kjj - " -ForegroundColor Cyan -NoNewline
 Write-Host -ForegroundColor 255 0 0 "@Fr4ncyyyy"
 
 Write-Host ""
@@ -77,6 +77,7 @@ Write-Host "Lo scan ha impiegato $time per essere eseguito." -ForegroundColor Ye
 
 
 $results | Out-GridView -PassThru -Title 'Signatures Results'
+
 
 
 
