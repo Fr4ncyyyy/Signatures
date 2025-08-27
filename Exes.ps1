@@ -73,8 +73,9 @@ $stopwatch.Stop()
 $time = $stopwatch.Elapsed.Hours.ToString("00") + ":" + $stopwatch.Elapsed.Minutes.ToString("00") + ":" + $stopwatch.Elapsed.Seconds.ToString("00") + "." + $stopwatch.Elapsed.Milliseconds.ToString("000")
 
 Write-Host ""
-Write-Host "The scan took $time to run." -ForegroundColor Yellow
+Write-Host "Lo scan ha impiegato $time per essere avviato." -ForegroundColor Yellow
 
 
 $results | Out-GridView -PassThru -Title 'Signatures Results'
+
 
