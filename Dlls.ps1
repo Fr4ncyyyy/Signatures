@@ -16,8 +16,8 @@ Write-Host @"
   ╚═════╝ ╚══════╝╚══════╝╚══════╝
 "@ -ForegroundColor Green
 Write-Host ""
-Write-Host "  Made by Francesco kjj - " -ForegroundColor Blue -NoNewline
-Write-Host -ForegroundColor Red "@Fr4ncyyyy"
+Write-Host "  Made by Francesco kjj - " -ForegroundColor DarkGreen -NoNewline
+Write-Host -ForegroundColor Green "@Fr4ncyyyy"
 
 Write-Host ""
 function Test-Admin {;$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent());$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator);}
@@ -77,4 +77,5 @@ Write-Host "Lo scan ha impiegato $time per essere eseguito." -ForegroundColor Ye
 
 
 $results | Out-GridView -PassThru -Title 'Signatures Results'
+
 
